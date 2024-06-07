@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:elevation="4dp"
+    tools:context=".adapter.FacesRVAdapter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/user_visit_photo"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="8dp"
+            android:id="@+id/faceImageView"/>
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/date_time"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="4dp"
+            android:hint="@string/name"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/surnameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="4dp"
+            android:hint="@string/surname_eng"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/placeTextView"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:hint="@string/place"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/deleteVisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/delete_visit"
+            android:src="@drawable/baseline_delete_24"
+            tools:ignore="ImageContrastCheck" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

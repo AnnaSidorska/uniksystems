@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".adapter.AccountRVAdapter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="12dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/user_image"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="8dp"
+            android:id="@+id/userImageView"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/userTagTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:hint="@string/user_tag"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/userSurnameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:hint="@string/surname"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/userNameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:hint="@string/name"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/userPatronymTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:hint="@string/patronym"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userNumberTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/serial_number"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/userEduFormTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/education_form"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/userFacultyTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/faculty"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/userIssueDateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/issue_date"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/userExpDateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/exp_date"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/userGroupTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/group_name"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/userPositionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/position"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/deleteAccount"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end|center"
+        android:layout_margin="8dp"
+        android:contentDescription="@string/delete_account"
+        android:src="@drawable/baseline_delete_24"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.cardview.widget.CardView>

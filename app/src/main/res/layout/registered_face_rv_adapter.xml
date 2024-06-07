@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:elevation="4dp"
+    tools:context=".adapter.FacesRVAdapter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/user_image"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="8dp"
+            android:id="@+id/faceImageView"/>
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textSize="16sp"
+            android:text="@string/time"/>
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/name1"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/surnameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/surname1"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/placeTextView"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/place1"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="8dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

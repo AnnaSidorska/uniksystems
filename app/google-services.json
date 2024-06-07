@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "765027527556",
+    "project_id": "uni-k-systems",
+    "storage_bucket": "uni-k-systems.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765027527556:android:86297e31472f03ee338bd1",
+        "android_client_info": {
+          "package_name": "com.example.unisystems"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_1fUNyEkXqJtFfXfNH_yH3Uvzwhzzjco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
